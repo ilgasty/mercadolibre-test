@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState  } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useUIStore } from '../../store/ui/ui-category-Store';
 import { TbTruckDelivery } from 'react-icons/tb';
@@ -35,7 +35,7 @@ export const ResultSearch = () => {
         {items.map(item => (
           <Link key={`l ${item.id}`} to={`/items/${item.id}`} className="item-link">
             <div key={item.id} className="item" >
-              <imag src={item.picture} alt={item.title} />
+              <img src={item.picture} alt={item.title} />
               <div className="item-info">
                 <p className="price">{currencyFormat(item.price)}{item.free_shipping && <TbTruckDelivery className="free-shipping" size={20} />} </p>
                 <p className="title">{item.title}</p>
