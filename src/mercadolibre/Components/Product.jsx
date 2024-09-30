@@ -26,7 +26,7 @@ export const Product = () => {
         <div className="productdetail_container">
           <Categories />
           <div className="product-main">
-            <img src={product.picture} alt={product.title} className="product-image" />
+            <img src={product.picture} alt={product.title} className="product-image" loading="lazy" />
 
             <div className="product-info">
               <span className="condition-sold">

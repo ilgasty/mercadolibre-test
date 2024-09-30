@@ -35,7 +35,7 @@ export const ResultSearch = () => {
         {items.map(item => (
           <Link key={`l ${item.id}`} to={`/items/${item.id}`} className="item-link">
             <div key={item.id} className="item" >
-              <img src={item.picture} alt={item.title} />
+              <imag src={item.picture} alt={item.title} />
               <div className="item-info">
                 <p className="price">{currencyFormat(item.price)}{item.free_shipping && <TbTruckDelivery className="free-shipping" size={20} />} </p>
                 <p className="title">{item.title}</p>
