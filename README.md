@@ -1,3 +1,8 @@
+
+# Descripcion del  Proyecto
+Se realizo un bakend en node donde se realiza las consultas del las Apis especificadas,  consultando diachas Apis.
+En el frontend se creo la funcionalidad que contiene un route, los componentes de búsqueda y detalle de producto. Para la conexión de api se utilizo axios y se creo una clase para desacoplar dicha conexión en caso de necesitar cambiar el proveedor.
+
 # Iniciar Proyecto
 
 Notara que la carpeta server se encuentra el Backend en node 
@@ -25,8 +30,9 @@ Ejecutar el test de pruebas de la API del backend
 
 ### `Detalle de la api de Mercado Libre`
 https://api.mercadolibre.com/sites/MLA/search?q 
-el campo price aveces no coincide ccon la api https://api.mercadolibre.com/items/
-es decir el campo prece son distintas para el mismo producto para resolver la inconcistencia de datos 
+El campo price a veces no coincide ccon la api https://api.mercadolibre.com/items/
+es decir el campo price son distintas para el mismo producto para resolver la inconcistencia de datos 
 tome el campo original_price de la api https://api.mercadolibre.com/sites/MLA/search?q contemplando que si es null debo tomar el campo price.
+
 
 
