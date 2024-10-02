@@ -1,7 +1,9 @@
 
 # Descripcion del  Proyecto
-Se realizo un bakend en node donde se realiza las consultas del las Apis especificadas,  consultando diachas Apis.
-En el frontend se creo la funcionalidad que contiene un route, los componentes de búsqueda y detalle de producto. Para la conexión de api se utilizo axios y se creo una clase para desacoplar dicha conexión en caso de necesitar cambiar el proveedor.
+Se realizo un bakend en node que consulta las Apis especificadas con un servicio desacoplado
+
+En el frontend se creo la funcionalidad que contiene un route, los componentes de búsqueda y detalle de producto. 
+Para la conexión de api se utilizo axios y se creo una clase para desacoplar dicha conexión en caso de necesitar cambiar el proveedor.
 
 # Iniciar Proyecto
 
