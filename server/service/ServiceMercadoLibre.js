@@ -1,4 +1,3 @@
-const axios = require('axios');
 const ServiceBase = require('../service/ServiceBase');
 class MercadoLibreService extends ServiceBase {
  
