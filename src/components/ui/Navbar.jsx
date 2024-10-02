@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useForm } from '../../hooks/useForm';
 import { GoSearch } from 'react-icons/go';
 export const Navbar = () => {
@@ -17,7 +17,8 @@ export const Navbar = () => {
   };
   return (
     <>
-      <Helmet>
+     <HelmetProvider>
+     <Helmet>
         <title>Test Mercadolibre</title>
         <meta name="description" content="Mercado libre productos test" />
         <meta name="keywords" content="Mercadolibre, venta, compra" />
@@ -43,6 +44,8 @@ export const Navbar = () => {
           <GoSearch size={15} />
         </button>
       </form>
+     </HelmetProvider>
+     
     </>
 
   )
