@@ -56,8 +56,8 @@ router.get('/:id', async (req, res) => {
 
     res.json({
       author: {
-        name: 'Nombre',
-        lastname: 'Apellido',
+        name: 'Gaston',
+        lastname: 'Pellegrini',
       },
       item,
     });
